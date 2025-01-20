@@ -1,0 +1,57 @@
+format = """
+[](#B0B0AF)\
+$os\
+$username\
+[](bg:#a0a09f fg:#B0B0AF)\
+$directory\
+[](fg:#a0a09f bg:#90908f)\
+$git_branch\
+$git_status\
+[](bg:#90908f fg:#90908f)\
+[ ](fg:#90908f)\
+"""
+
+[username]
+show_always = true
+style_user = "bg:#B0B0AF"
+style_root = "bg:#B0B0AF"
+format = '[ $user ]($style)'
+ 
+[directory]
+style = "bg:#a0a09f"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[character]
+success_symbol = "[➜](bold purple)"
+error_symbol = "[✗](bold red)"
+
+[python]
+#symbol = ""
+style = "bg:#90908f"
+format = '[ $symbol $version]($style)'
+
+[dart]
+style = "bg: #90908f"
+format = '[ $symbol $version]($style)'
+
+[nodejs]
+style = "bg: #90908f"
+format = '[ $symbol $version]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:#90908f"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:#90908f"
+format = '[$all_status$ahead_behind ]($style)'
+
+[time]
+disabled = true
+time_format = "%R" # Hour:Minute Format
+style = "bg:#8f3f71"
+format = '[ $time ]($style)'
+
