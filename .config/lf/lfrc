@@ -117,7 +117,7 @@ map de empty_trash
 
 # Movement
 map gh cd ~/
-map gc cd ~/.config
+map gc cd ~/dotfiles/.config
 map gD cd ~/Documents
 map gd cd ~/Downloads
 map gp cd ~/Pictures
