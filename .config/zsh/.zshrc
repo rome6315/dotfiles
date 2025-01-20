@@ -10,6 +10,7 @@ export XDG_PICTURES_DIR=$HOME/Pictures/
 ##### OPTIONS #####
 unsetopt BEEP # annoying
 setopt appendhistory # append to history instead of overwrite/prepend
+setopt histignoredups # ignore duplicate commands in history
 ##### END OPTIONS #####
 
 
@@ -54,7 +55,7 @@ bindkey '^[[B' history-substring-search-down
 ##### HISTORY SETTINGS #####
 HISTSIZE=10000              # The maximum number of history entries to keep in memory
 SAVEHIST=10000              # The maximum number of history entries to save in the history file
-HISTFILE=~/.zsh_history      # Path to the history file
+HISTFILE=~/.config/zsh/.zsh_history      # Path to the history file
 ##### END HISTORY SETTINGS #####
 
 ##### PLUGINS #####

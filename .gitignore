@@ -2,6 +2,7 @@
 /.config/cava/shaders
 /.config/kitty/kitty.conf.bak
 /.config/zsh/.zcompdump 
+/.config/zsh/.zsh_history
 /Pictures/everforest-hyprland-rice
 /Pictures/Wallpapers
 /stow.txt
