@@ -1,0 +1,28 @@
+SET UP:
+- Make dotfiles dir in ~/dotfiles/ 
+- Make .config fir in ~/dotfiles/.config/ 
+- Move wanted config directories to ~/dotfiles/.config/ (i.e. mv ~/.config/zsh ~/dotfiles/config)
+- Type 'stow .' in ~/dotfiles dir 
+	- this will create a symlink so that your zsh config directory goes back to ~/.config/zsh while
+	also staying in ~/dotfiles/.config dir
+	- on top of that, either file can be edited and both will update themeselves to stay in sync
+
+STOW IGNORE FILE:
+- The local stow ignore file works the exact same as a .gitignore file. use it for stuff you dont want to
+create a symlink for, but want it in the ~/dotfiles dir
+- make sure to copy the default ignore file found in their docs and add onto it because this default file
+will ignore stuff like .gitignore and .git which you want
+
+MAINTENANCE:
+- anytime you download something new like a Window Manager or whatever that has a new config you want to 
+track, follow the steps in "SET UP:" above
+
+MOVING TO NEW SYSTEM:
+- create the ~/dotfiles dir on the new system
+- link it to the existing git repo and then pull down the contents of the repo
+- type 'stow .' and it will create all of the subfolders you have in the .config directory using symlinks
+- boom new system has all important config files immediately
+
+TIPS:
+- this can be done with anything, not just dotfiles. For example, you can also stow your .local/bin dir
+or you .themes dir
