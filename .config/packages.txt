@@ -115,6 +115,7 @@ slurp
 smartmontools
 starship
 steam
+stow
 swaync
 swww
 timeshift

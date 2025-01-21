@@ -34,5 +34,5 @@ style = "bg:#608ec4 fg:#DFA7BF"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#DFA7BF fg: #DFA7BF"
+style = "bg:#608ec4 fg: #DFA7BF"
 format = '[$all_status$ahead_behind ]($style)'

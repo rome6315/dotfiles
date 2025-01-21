@@ -166,5 +166,5 @@
     "exec": "~/.config/waybar/scripts/theme.sh 2> /dev/null",
     "return-type": "json",
     "on-click": "~/.config/scripts/theme-switcher/rofi_select_theme.sh"
-  }
+  },
 }
