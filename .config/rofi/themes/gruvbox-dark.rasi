@@ -42,7 +42,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/Pictures/Wallpapers/gruvbox-chinatown.png", height);
+    background-image:            url("~/Pictures/Wallpapers/gruvbox-chinatown-original.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy"];
 }

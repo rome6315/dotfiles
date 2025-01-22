@@ -38,7 +38,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/Pictures/Wallpapers/galaxy.png", height);
+    background-image:            url("~/Pictures/Wallpapers/galaxy-old.jpg", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy"];
 }
