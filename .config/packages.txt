@@ -139,6 +139,7 @@ volumeicon
 vulkan-radeon
 vulkan-tools
 waybar
+waybar-cava-debug
 waybar-module-pacman-updates-git
 wget
 whois
@@ -193,6 +194,7 @@ uwsm
 vesktop-bin
 visual-studio-code-bin
 visual-studio-code-bin-debug
+waybar-cava-debug
 waybar-module-pacman-updates-git
 winegui-bin
 winegui-bin-debug

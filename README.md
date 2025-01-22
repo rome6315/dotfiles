@@ -4,6 +4,8 @@ Arch Linux - Hyprland
 
 Colors grabbed using pywal16
 
+*Gruvbox Light Theme*
+![Screenshot](Pictures/gruvbox-rice/gruvbox_light_rice.png)
 *Gruvbox Dark Theme*
 ![Screenshot](Pictures/gruvbox-rice/gruvbox_dark_rice.png)
 *Peaceful Pond Theme*
@@ -16,3 +18,5 @@ Colors grabbed using pywal16
 ![Screenshot](Pictures/pastel_sky/pastel_sky_rice.png)
 *Pain (Naruto) Theme*
 ![Screenshot](Pictures/pain/pain_rice.png)
+*Galaxy Theme*
+![Screenshot](Pictures/galaxy/galaxy_rice.png)

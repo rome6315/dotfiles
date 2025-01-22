@@ -74,7 +74,7 @@ elif [[ "$1" == "Pain" ]]; then
   $scripts/dunst_theme.sh "pain"
 
 elif [[ "$1" == "Galaxy" ]]; then
-  $scripts/wallpaper_theme.sh "galaxy.jpg"
+  $scripts/wallpaper_theme.sh "galaxy.png"
   $scripts/waybar_theme.sh "galaxy"
   $scripts/hyprland_theme.sh "galaxy"
   $scripts/kitty_theme.sh "Galaxy"
