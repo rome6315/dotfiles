@@ -41,7 +41,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/Pictures/Wallpapers/pain_tongue.jpg", height);
+    background-image:            url("~/.config/rofi/images/pain_tongue_original.jpg", height);
     orientation:                 vertical;
     children:                    ["inputbar", "dummy"];
 }
