@@ -20,8 +20,10 @@ window {
     /* properties for all widgets */
     enabled:                     true;
     border-radius:               3px;
+    background-image: linear-gradient(45deg, #A85B9B, #26AAD3);
     cursor:                      "default";
-    background-color:            @background;
+    padding: 			 3px;
+    /* background-color:            @background; */
 }
 
 /*****----- Main Box -----*****/
@@ -44,7 +46,7 @@ imagebox {
 listbox {
     spacing:                     20px;
     padding:                     20px;
-    background-color:            transparent;
+    background-color:            @background;
     orientation:                 vertical;
     children:                    ["listview" ];
 }

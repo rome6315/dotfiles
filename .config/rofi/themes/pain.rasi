@@ -1,165 +1,154 @@
-/* Define the Pain color palette */
+/*****----- Global Properties -----*****/
 * {
-    /* Pain colors */
-    overall-bg:          #160f1b; /* overall (deepest) bg color */
-    search-list:     #160f1b; /* list tile color and search bar color */
-    search-border:          #9e3357; /* search bar border */
-    text:          #BF3A9A; /* text color */
-    hover:         #6e5d8e; /* hovered over list tile */
-    element-normal: #5d9b7f;
-    element-alternate: #33509f;
-    window-border: #f3d9a1;
-    urgent:     #910EAE; /* urgent color */
-
-    /* Map the Purple Abyss colors to the Rofi variables */
-    bg0:     @overall-bg; /* overall (deepest) bg color */
-    bg1:     @search-list; /* search bar and list tile color */
-    fg0:     @text;
-    border:	@search-border;
-
-    accent-color:     @hover; /* hovered over list tile */
-    urgent-color:     @urgent;
-
-    background-color:   transparent;
-    text-color:         @fg0; /* text color */
-
-    margin:     0;
-    padding:    0;
-    spacing:    0;
+    background:                  #160f1b;
+    pain-red: #9e3357;
+    pain-blue: #33509f;
+    pain-green: #5d9b7f;
+    pain-yellow: #f3d9a1;
+    pain-pink: #910EAE;
+    pain-purple: #6e5d8e;
 }
 
+/*****----- Main Window -----*****/
 window {
-    location:   center;
-    width:      900px;
-    /*border: 2px solid;*/
-    /*border-color: @window-border;*/
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       1000px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
     background-image: linear-gradient(45deg, #9e3357, #33509f, #5d9b7f, #bf3a9a,
     #6e5d8e, #916097, #f3d9a1);
-
-    /*background-color:   @bg0;*/
-    padding: 3px;
+    cursor:                      "default";
+    padding: 			 3px;
+    /* background-color:            @background; */
 }
 
+/*****----- Main Box -----*****/
 mainbox {
-    background-color:    @bg0; /* Solid background for the inner content */
-    padding:             10px;
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listbox" ];
 }
 
+imagebox {
+    padding:                     20px;
+    background-color:            transparent;
+    background-image:            url("~/Pictures/Wallpapers/pain_tongue.jpg", height);
+    orientation:                 vertical;
+    children:                    ["inputbar", "dummy"];
+}
+
+listbox {
+    spacing:                     20px;
+    padding:                     20px;
+    background-color:            @background;
+    orientation:                 vertical;
+    children:                    ["listview"];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+/*****----- Inputbar -----*****/
 inputbar {
-    spacing:    8px;
-    padding:    8px;
-    border: 2px solid;
-    border-color: @border;
-
-    background-color:   @bg1;
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     15px;
+    background-color:            @background;
+    text-color:                  @pain-blue;
+    border:			 2px solid;
+    border-color:		 @pain-purple;
+    children:                    [ "textbox-prompt-colon", "entry" ];
 }
-
-prompt, element-icon, element-text {
-    vertical-align: 0.5;
-}
-
-entry {
-  enabled: true;
-  placeholder: "Search";
-  placeholder-color: @window-border;
-  text-color: @window-border;
-}
-
-prompt {
-    text-color: @window-border;
-}
-
-textbox {
-    padding:            8px;
-    background-color:   @bg1;
-}
-
 textbox-prompt-colon {
-  enabled: true;
-  expand: false;
-  str: " ";
+    enabled:                     true;
+    expand:                      false;
+    str:                         "";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
 }
 
+/*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     5;
-    lines:                       3;
+    columns:                     1;
+    lines:                       8;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
     layout:                      vertical;
     reverse:                     false;
     fixed-height:                true;
-    fixed-columns:               false;
+    fixed-columns:               true;
     
-    spacing:                     15px;
-    margin:                      0px;
-    padding:                     10px;
-    border:                      0px solid;
+    spacing:                     10px;
+    background-color:            transparent;
     cursor:                      "default";
 }
 
+/*****----- Elements -----*****/
 element {
     enabled:                     true;
     spacing:                     15px;
-    margin:                      0px;
-    padding:                     20px 10px;
-    border:                      2px solid;
-    orientation:                 vertical;
+    padding:                     8px;
+    background-color:            transparent;
     cursor:                      pointer;
 }
-
-element normal normal {
-    text-color: @element-normal;
-    background-color: @bg1;
-    border-color: @element-normal;
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  @pain-green;
+    border: 			 2px solid;
+    border-color:		 @pain-yellow;
 }
 
-element alternate normal {
-    background-color: @bg1;
-    text-color: @element-alternate;
-    border-color: @element-alternate;
+element selected.normal {
+    background-color:            @pain-purple;
 }
 
-element normal urgent {
-    text-color: @urgent-color;
-}
-
-element normal active {
-    text-color: @accent-color;
-}
-
-element alternate active {
-    text-color: @accent-color;
-}
-
-element selected {
-    text-color: @bg0;
-}
-
-element selected normal, element selected active {
-    background-color:   @accent-color;
-}
-
-element selected urgent {
-    background-color:   @urgent-color;
+element alternate.normal {
+    background-color: 		 inherit;
+    text-color: 		 @pain-yellow;
+    border: 			 2px solid;
+    border-color: 		 @pain-green;
 }
 
 element-icon {
-    size:   1.95em;
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
 }
 
 element-text {
-    text-color: inherit;
-    vertical-align: 0.5;
-    horizontal-align: 0.5;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
 }
 
 configuration {
+    modi: "drun";
     font: "Hack Nerd Font Bold 11";
     hide-scrollbar: true;
     show-icons:                 true;
     display-drun:               "";
 	  drun-display-format:        "{name}";
 }
-
