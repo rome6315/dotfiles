@@ -12,9 +12,9 @@
     "output": ["DP-1"],
 
     // Choose the order of the modules
-    "modules-left": ["custom/powermenu", "network", "custom/dotfiles"],
+    "modules-left": ["custom/powermenu", "network", "custom/dotfiles", "custom/theme"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["memory", "custom/updates", "pulseaudio", "clock"],
+    "modules-right": ["temperature", "memory", "custom/updates", "pulseaudio", "clock"],
 
     // Modules configuration
      "hyprland/workspaces": {
@@ -156,7 +156,15 @@
     "interval": 10,
     "exec": "~/.config/waybar/scripts/dotfile_status.sh 2> /dev/null",
     "return-type": "json"
-  }
+  },
+
+  // display the current theme being used from the theme switcher
+  "custom/theme": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/theme.sh 2> /dev/null",
+    "return-type": "json",
+    "on-click": "~/.config/scripts/theme-switcher/rofi_select_theme.sh"
+  },
 },
 // END DP-1 WAYBAR CONFIG
 
@@ -177,15 +185,23 @@
     "output": ["DP-2"],
 
     // Choose the order of the modules
-    "modules-left": ["custom/powermenu"],
+    "modules-left": ["custom/powermenu", "custom/theme"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["clock"],
+    "modules-right": ["cava", "temperature", "memory", "clock"],
 
     // shutdown, logout, etc. 
     "custom/powermenu": {
     "format": "  roman",
     "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/powermenu"
     },
+
+    // display the current theme being used from the theme switcher
+  "custom/theme": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/theme.sh 2> /dev/null",
+    "return-type": "json",
+    "on-click": "~/.config/scripts/theme-switcher/rofi_select_theme.sh"
+  },
     
 
     // workspaces
@@ -204,12 +220,28 @@
          }
     },
 
+// ram usage
+    "memory": {
+        "format": " {used}G",
+        "tooltip-format": "RAM Usage",
+    },
+
+    //cpu temp
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "tooltip-format": "CPU Temp",
+        "format-icons": ["", "", ""],
+    },
+
      // date and time
      "clock": {
         // "timezone": "America/New_York",
         "format": "{:%I:%M %p - %a, %b %d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
+
+    //cava module using waybar-cava from aur
 }
 // END DP-2 WAYBAR CONFIG
 ]

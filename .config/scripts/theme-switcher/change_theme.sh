@@ -72,6 +72,16 @@ elif [[ "$1" == "Pain" ]]; then
   $scripts/cava_theme.sh "pain"
   $scripts/rofi_theme.sh "pain"
   $scripts/dunst_theme.sh "pain"
+
+elif [[ "$1" == "Galaxy" ]]; then
+  $scripts/wallpaper_theme.sh "galaxy.jpg"
+  $scripts/waybar_theme.sh "galaxy"
+  $scripts/hyprland_theme.sh "galaxy"
+  $scripts/kitty_theme.sh "Galaxy"
+  $scripts/starship_theme.sh "galaxy"
+  $scripts/cava_theme.sh "galaxy"
+  $scripts/rofi_theme.sh "galaxy"
+  $scripts/dunst_theme.sh "galaxy"
 fi
 
 
