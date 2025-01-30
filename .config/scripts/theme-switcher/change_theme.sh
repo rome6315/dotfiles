@@ -35,7 +35,7 @@ elif [[ "$1" == "Peaceful Pond" ]]; then
 
 elif [[ "$1" == "Purple Abyss" ]]; then
   $scripts/wallpaper_theme.sh "purple-abyss.jpg"
-  $scripts/waybar_theme.sh "purple_abyss2" # regular 'purple_abyss' uses the more squared borders
+  $scripts/waybar_theme.sh "purple_abyss"
   $scripts/hyprland_theme.sh "purple_abyss"
   $scripts/kitty_theme.sh "Purple Abyss"
   $scripts/starship_theme.sh "purple_abyss"
@@ -45,7 +45,7 @@ elif [[ "$1" == "Purple Abyss" ]]; then
 
 elif [[ "$1" == "Mugetsu" ]]; then
   $scripts/wallpaper_theme.sh "mugetsu.jpg"
-  $scripts/waybar_theme.sh "mugetsu2" # regular 'mugetsu' has some corners boxed some rounded
+  $scripts/waybar_theme.sh "mugetsu"
   $scripts/hyprland_theme.sh "mugetsu"
   $scripts/kitty_theme.sh "Mugetsu"
   $scripts/starship_theme.sh "mugetsu"
