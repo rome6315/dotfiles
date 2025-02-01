@@ -16,6 +16,7 @@ cava
 clang
 cmatrix
 conky
+discord
 dnsmasq
 dunst
 efibootmgr
@@ -28,6 +29,7 @@ font-manager
 fzf
 git
 grim
+grimblast-git
 grub
 gst-plugin-pipewire
 gthumb
@@ -40,7 +42,6 @@ hyprlock
 hyprpaper
 hyprpicker
 hyprshade
-hyprshot
 imagemagick
 inotify-tools
 iw
@@ -107,8 +108,8 @@ qtile
 qtile-extras-git
 radeontop
 ripgrep
-rofi-git
 rofi-git-debug
+rofi-wayland
 sddm
 shellcheck
 slurp
@@ -128,7 +129,6 @@ ttf-times-new-roman
 unzip
 upscayl-bin
 uwsm
-vesktop-bin
 vim
 virt-manager
 virt-viewer
@@ -139,7 +139,6 @@ volumeicon
 vulkan-radeon
 vulkan-tools
 waybar
-waybar-cava-debug
 waybar-module-pacman-updates-git
 wget
 whois
@@ -173,8 +172,8 @@ zsh-history-substring-search
 zsh-syntax-highlighting
 aura
 cava
+grimblast-git
 hyprshade
-hyprshot
 iwgtk
 librewolf-bin
 librewolf-bin-debug
@@ -184,17 +183,14 @@ pistol-bin
 pistol-bin-debug
 python-pywal16
 qtile-extras-git
-rofi-git
 rofi-git-debug
 trashy
 trashy-debug
 ttf-times-new-roman
 upscayl-bin
 uwsm
-vesktop-bin
 visual-studio-code-bin
 visual-studio-code-bin-debug
-waybar-cava-debug
 waybar-module-pacman-updates-git
 winegui-bin
 winegui-bin-debug
