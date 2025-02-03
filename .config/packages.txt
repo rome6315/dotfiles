@@ -75,7 +75,6 @@ network-manager-applet
 networkmanager
 networkmanager-openvpn
 nmap
-nodejs-lts-hydrogen
 noto-fonts-emoji
 npm
 nwg-dock-hyprland
@@ -188,7 +187,6 @@ trashy
 trashy-debug
 ttf-times-new-roman
 upscayl-bin
-uwsm
 visual-studio-code-bin
 visual-studio-code-bin-debug
 waybar-module-pacman-updates-git
