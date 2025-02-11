@@ -45,8 +45,7 @@ window#waybar {
 #workspaces {
     border: 3px solid;
     /*border-color: @pain-indigo;*/
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     background-color: @bg;
     color: @pain-indigo;
     margin-top: 5px;
@@ -59,8 +58,7 @@ window#waybar {
 #clock {
     border: 3px solid;
     /*border-color: @pain-orange;*/
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     color: @pain-orange;
     background-color: @bg;
     margin-top: 5px;
@@ -72,8 +70,7 @@ window#waybar {
 
 #temperature {
     border: 3px solid;
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     background-color: @bg;
     color: @pain-bright-orange;
     margin-top: 5px;
@@ -86,8 +83,7 @@ window#waybar {
 #memory {
     border: 3px solid;
     /*border-color: @pain-pink;*/
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     background-color: @bg;
     color: @pain-pink;
     margin-top: 5px;
@@ -100,8 +96,7 @@ window#waybar {
 #network {
     border: 3px solid;
     /*border-color: @pain-green;*/
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     background-color: @bg;
     color: @pain-green;
     margin-top: 5px;
@@ -114,8 +109,7 @@ window#waybar {
 #pulseaudio {
     border: 3px solid;
     /*border-color: @pain-yellow;*/
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     background-color: @bg;
     color: @pain-yellow;
     margin-top: 5px;
@@ -133,8 +127,7 @@ window#waybar {
 #custom-updates {
     border: 3px solid;
     /*border-color: @pain-purple;*/
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     color: @pain-purple;
     padding-left: 10px;
     padding-right: 5px;
@@ -147,8 +140,7 @@ window#waybar {
 #custom-powermenu {
     border: 3px solid;
     /*border-color: @pain-red;*/
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     color: @pain-red;
     background-color: @bg;
     margin-top: 5px;
@@ -162,8 +154,7 @@ window#waybar {
     /* border: 3px solid;*/
     /*border-color: @pain-blue;*/ 
     border: 3px solid;
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     color: @pain-blue;
     background-color: @bg;
     margin-top: 5px;
@@ -175,8 +166,7 @@ window#waybar {
 
 #custom-theme {
     border: 3px solid;
-    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
-        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-purple) 1;
     color: @pain-bright-pink;
     background-color: @bg;
     margin-top: 5px;
