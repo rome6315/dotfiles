@@ -82,6 +82,16 @@ elif [[ "$1" == "Galaxy" ]]; then
   $scripts/cava_theme.sh "galaxy"
   $scripts/rofi_theme.sh "galaxy"
   $scripts/dunst_theme.sh "galaxy"
+
+elif [[ "$1" == "Cyberpunk" ]]; then
+  $scripts/wallpaper_theme.sh "cyberpunk.png"
+  $scripts/waybar_theme.sh "cyberpunk"
+  $scripts/hyprland_theme.sh "cyberpunk"
+  $scripts/kitty_theme.sh "Cyberpunk Neon"
+  $scripts/starship_theme.sh "cyberpunk"
+  $scripts/cava_theme.sh "cyberpunk"
+  $scripts/rofi_theme.sh "cyberpunk"
+  $scripts/dunst_theme.sh "cyberpunk"
 fi
 
 
