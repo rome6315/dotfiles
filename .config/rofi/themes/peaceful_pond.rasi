@@ -1,150 +1,154 @@
-/* Define the Peaceful Pond color palette */
+/*****----- Global Properties -----*****/
 * {
-    /* Peaceful Pond colors */
-    overall-bg:          #A297D7; /* overall (deepest) bg color */
-    search-list:     #7486B6; /* search bar and list tile color */
-    text:          #c5c7ca; /* text color */
-    hover-tile:         #92709F; /* hovered over list tile */
-
-    /* Map the Peaceful Pond colors to the Rofi variables */
-    bg0:     @overall-bg; /* overall (deepest) bg color */
-    bg1:     @search-list; /* search bar and list tile color */
-    fg0:     @text;
-
-    accent-color:     @hover-tile; /* hovered over list tile */
-    urgent-color:     @hover-tile;
-
-    background-color:   transparent;
-    text-color:         @fg0; /* text color */
-
-    margin:     0;
-    padding:    0;
-    spacing:    0;
+    background:                  #A297D7;
+    peaceful-purple: #92709F;
+    peaceful-indigo: #7486B6;
+    peaceful-white: #c5c7ca;
 }
 
+/*****----- Main Window -----*****/
 window {
-    location:   center;
-    width:      900px;
-    border: 2px solid;
-    border-radius: 15px;
-    border-color: @accent-color;
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       1000px;
+    x-offset:                    0px;
+    y-offset:                    0px;
 
-    background-color:   @bg0;
-    padding: 20px;
+    /* properties for all widgets */
+    enabled:                     true;
+    border: 			 3px solid;
+    border-radius:               5px;
+    border-color:		 @peaceful-indigo;
+    cursor:                      "default";
+    background-color:            @background; 
 }
 
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listbox" ];
+}
+
+imagebox {
+    padding:                     20px;
+    background-color:            transparent;
+    background-image:            url("~/.config/rofi/images/peaceful_pond.png", height);
+    orientation:                 vertical;
+    children:                    [ "inputbar", "dummy"];
+}
+
+listbox {
+    spacing:                     20px;
+    padding:                     20px;
+    background-color:            @background;
+    orientation:                 vertical;
+    children:                    ["listview" ];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+/*****----- Inputbar -----*****/
 inputbar {
-    spacing:    8px;
-    padding:    8px;
-    border-radius: 15px;
-
-    background-color:   @bg1;
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     15px;
+    background-color:            @background;
+    text-color:                  @peaceful-indigo;
+    border:			 2px solid;
+    border-radius: 		 5px;
+    border-color:		 @peaceful-indigo;
+    children:                    [ "textbox-prompt-colon", "entry" ];
 }
-
-prompt, element-icon, element-text {
-    vertical-align: 0.5;
-}
-
-entry {
-  enabled: true;
-  placeholder: "Search";
-  placeholder-color: @text-color;
-}
-
-prompt {
-    text-color: @accent-color;
-}
-
-textbox {
-    padding:            8px;
-    background-color:   @bg1;
-}
-
 textbox-prompt-colon {
-  enabled: true;
-  expand: false;
-  str: " ";
+    enabled:                     true;
+    expand:                      false;
+    str:                         "";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
 }
 
+/*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     5;
-    lines:                       3;
+    columns:                     1;
+    lines:                       8;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
     layout:                      vertical;
     reverse:                     false;
     fixed-height:                true;
-    fixed-columns:               false;
+    fixed-columns:               true;
     
-    spacing:                     15px;
-    margin:                      0px;
-    padding:                     10px;
+    spacing:                     10px;
+    background-color:            transparent;
     cursor:                      "default";
 }
 
+/*****----- Elements -----*****/
 element {
     enabled:                     true;
     spacing:                     15px;
-    margin:                      0px;
-    padding:                     20px 10px;
-    border:                      2px solid;
-    border-radius:		 15px;
-    border-color:		 @accent-color;
-    orientation:                 vertical;
+    padding:                     8px;
+    border-radius:               10px;
+    background-color:            transparent;
     cursor:                      pointer;
 }
-
-element normal normal {
-    text-color: @fg0;
-    background-color: @bg1;
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  @peaceful-indigo;
+    border: 			 2px solid;
+    border-color:		 @peaceful-indigo;
 }
 
-element alternate normal {
-    background-color: @bg1;
-    text-color: @fg0;
+element selected.normal {
+    background-color:            @peaceful-purple;
+    text-color: 		 @peaceful-white;
 }
 
-element normal urgent {
-    text-color: @urgent-color;
-}
-
-element normal active {
-    text-color: @accent-color;
-}
-
-element alternate active {
-    text-color: @accent-color;
-}
-
-element selected {
-    text-color: @bg0;
-}
-
-element selected normal, element selected active {
-    background-color:   @accent-color;
-}
-
-element selected urgent {
-    background-color:   @urgent-color;
+element alternate.normal {
+    background-color: 		 inherit;
+    text-color: 		 @peaceful-indigo;
+    border: 			 2px solid;
+    border-color: 		 @peaceful-indigo;
 }
 
 element-icon {
-    size:   1.95em;
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
 }
 
 element-text {
-    text-color: inherit;
-    vertical-align: 0.5;
-    horizontal-align: 0.5;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
 }
 
 configuration {
+    modi: "drun";
     font: "Hack Nerd Font Bold 11";
     hide-scrollbar: true;
     show-icons:                 true;
     display-drun:               "";
 	  drun-display-format:        "{name}";
 }
-

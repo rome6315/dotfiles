@@ -1,5 +1,5 @@
 @define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
-@define-color bg #000b1e; /* background color for the modules */ 
+@define-color bg rgba(0,11,30,0.8); /* background color for the modules */ 
 @define-color button #626c78; /* color for workspace buttons */
 @define-color cyber-red #ff0000;
 @define-color cyber-purple #711c91;

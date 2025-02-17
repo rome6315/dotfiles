@@ -25,6 +25,7 @@ fd
 ffmpegthumbnailer
 firefox
 fish
+flatpak
 font-manager
 fzf
 git
@@ -107,7 +108,6 @@ qtile
 qtile-extras-git
 radeontop
 ripgrep
-rofi-git-debug
 rofi-wayland
 sddm
 shellcheck
@@ -182,7 +182,6 @@ pistol-bin
 pistol-bin-debug
 python-pywal16
 qtile-extras-git
-rofi-git-debug
 trashy
 trashy-debug
 ttf-times-new-roman

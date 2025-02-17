@@ -22,6 +22,7 @@ window {
 
     /* properties for all widgets */
     enabled:                     true;
+    border-radius: 		 3px;
     background-image: linear-gradient(45deg, #133e7c, #711c91, #AD29FF, #ff0000,
     #5EFE26, #EDFF83, #0abdc6);
     cursor:                      "default";
@@ -67,6 +68,7 @@ inputbar {
     text-color:                  @cyber-yellow;
     border:			 2px solid;
     border-color:		 @cyber-green;
+    border-radius: 		 3px;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
 textbox-prompt-colon {
@@ -116,6 +118,7 @@ element normal.normal {
     text-color:                  @cyber-blue;
     border: 			 2px solid;
     border-color:		 @cyber-purple;
+    border-radius: 		 3px;
 }
 
 element selected.normal {
@@ -127,6 +130,7 @@ element alternate.normal {
     text-color: 		 @cyber-purple;
     border: 			 2px solid;
     border-color: 		 @cyber-blue;
+    border-radius: 		 3px;
 }
 
 element-icon {
