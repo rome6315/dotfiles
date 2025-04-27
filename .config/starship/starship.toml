@@ -1,25 +1,24 @@
 format = """
-[░▒▓](#857DC8)\
-[](#857DC8)\
+[](#ea6962)\
 $os\
 $username\
-[](bg:#92709F fg:#857DC8)\
+[](bg:#a9b665 fg:#ea6962)\
 $directory\
-[](fg:#92709F bg:#5462AE)\
+[](fg:#a9b665 bg:#7daea3)\
 $git_branch\
 $git_status\
-[](bg:#5462AE fg:#5462AE)\
-[ ](fg:#5462AE)\
+[](bg:#7daea3 fg:#7daea3)\
+[ ](fg:#7daea3)\
 """
 
 [username]
 show_always = true
-style_user = "bg:#857DC8 fg:#c5c7ca"
-style_root = "bg:#857DC8"
-format = '[  $user ]($style)'
+style_user = "bg:#ea6962 fg:#32302f"
+style_root = "bg:#ea6962 fg:#32302f"
+format = '[ $user ]($style)'
  
 [directory]
-style = "bg:#92709F fg:#c5c7ca"
+style = "bg:#a9b665 fg:#32302f"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -30,9 +29,16 @@ error_symbol = "[✗](bold red)"
 
 [git_branch]
 symbol = ""
-style = "bg:#5462AE fg:#c5c7ca"
+style = "bg:#7daea3 fg:#32302f"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#5462AE fg:#c5c7ca"
+style = "bg:#7daea3 fg:#32302f"
 format = '[$all_status$ahead_behind ]($style)'
+
+[time]
+disabled = true
+time_format = "%R" # Hour:Minute Format
+style = "bg:#8f3f71"
+format = '[ $time ]($style)'
+
