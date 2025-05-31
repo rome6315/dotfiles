@@ -170,12 +170,12 @@ zsh-autosuggestions
 zsh-history-substring-search
 zsh-syntax-highlighting
 aura
-cava
 grimblast-git
 hyprshade
 iwgtk
 librewolf-bin
 librewolf-bin-debug
+neofetch
 picom-git
 pipes.sh
 pistol-bin
