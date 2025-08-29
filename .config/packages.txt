@@ -68,6 +68,7 @@ lutris
 lxappearance
 magic-wormhole
 man-db
+mpv
 nano
 neofetch
 neovim
@@ -76,6 +77,7 @@ network-manager-applet
 networkmanager
 networkmanager-openvpn
 nmap
+nodejs-lts-iron
 noto-fonts-emoji
 npm
 nwg-dock-hyprland
@@ -111,6 +113,7 @@ ripgrep
 rofi-wayland
 sddm
 shellcheck
+shotcut
 slurp
 smartmontools
 starship
@@ -123,7 +126,6 @@ traceroute
 trashy
 trashy-debug
 ttf-fira-code
-ttf-font-awesome
 ttf-times-new-roman
 unzip
 upscayl-bin
@@ -139,6 +141,7 @@ vulkan-radeon
 vulkan-tools
 waybar
 waybar-module-pacman-updates-git
+waybar-module-pacman-updates-git-debug
 wget
 whois
 wine
@@ -151,6 +154,7 @@ wireless_tools
 wireplumber
 wl-clipboard
 woeusb
+woff2-font-awesome
 wqy-zenhei
 xclip
 xdg-desktop-portal-gtk
@@ -189,6 +193,7 @@ upscayl-bin
 visual-studio-code-bin
 visual-studio-code-bin-debug
 waybar-module-pacman-updates-git
+waybar-module-pacman-updates-git-debug
 winegui-bin
 winegui-bin-debug
 woeusb
