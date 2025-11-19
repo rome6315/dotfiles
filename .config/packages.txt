@@ -110,7 +110,7 @@ qtile
 qtile-extras-git
 radeontop
 ripgrep
-rofi-wayland
+rofi
 sddm
 shellcheck
 shotcut
