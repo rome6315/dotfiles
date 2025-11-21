@@ -92,6 +92,17 @@ elif [[ "$1" == "Cyberpunk" ]]; then
   $scripts/cava_theme.sh "cyberpunk"
   $scripts/rofi_theme.sh "cyberpunk"
   $scripts/dunst_theme.sh "cyberpunk"
+
+elif [[ "$1" == "Irithyll" ]]; then
+  $scripts/wallpaper_theme.sh "irithyll.png"
+  $scripts/waybar_theme.sh "irithyll"
+  $scripts/hyprland_theme.sh "irithyll"
+  $scripts/kitty_theme.sh "Irithyll"
+  $scripts/starship_theme.sh "irithyll"
+  $scripts/cava_theme.sh "irithyll"
+  $scripts/rofi_theme.sh "irithyll"
+  $scripts/dunst_theme.sh "irithyll"
+
 fi
 
 

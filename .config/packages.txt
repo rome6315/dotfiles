@@ -1,7 +1,6 @@
 7zip
 alacritty
 amd-ucode
-amdvlk
 aura
 baobab
 base
@@ -153,6 +152,7 @@ winetricks
 wireless_tools
 wireplumber
 wl-clipboard
+wlroots0.15-debug
 woeusb
 woff2-font-awesome
 wqy-zenhei
@@ -196,6 +196,7 @@ waybar-module-pacman-updates-git
 waybar-module-pacman-updates-git-debug
 winegui-bin
 winegui-bin-debug
+wlroots0.15-debug
 woeusb
 youtube-music-bin
 youtube-music-bin-debug
