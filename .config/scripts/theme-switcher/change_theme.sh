@@ -103,6 +103,15 @@ elif [[ "$1" == "Irithyll" ]]; then
   $scripts/rofi_theme.sh "irithyll"
   $scripts/dunst_theme.sh "irithyll"
 
+elif [[ "$1" == "MOHG" ]]; then
+  $scripts/wallpaper_theme.sh "mohg.png"
+  $scripts/waybar_theme.sh "mohg"
+  $scripts/hyprland_theme.sh "mohg"
+  $scripts/kitty_theme.sh "Mohg"
+  $scripts/starship_theme.sh "mohg"
+  $scripts/rofi_theme.sh "mohg"
+  $scripts/cava_theme.sh "mohg"
+  $scripts/dunst_theme.sh "mohg"
 fi
 
 
