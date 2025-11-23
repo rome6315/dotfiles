@@ -13,12 +13,12 @@ $git_status\
 
 [username]
 show_always = true
-style_user = "bg:#9F2323"
+style_user = "bg:#9F2323 fg:#120709"
 style_root = "bg:#9F2323"
 format = '[ $user ]($style)'
  
 [directory]
-style = "bg:#A33948"
+style = "bg:#A33948 fg:#120709"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -29,29 +29,29 @@ error_symbol = "[✗](bold red)"
 
 [python]
 #symbol = ""
-style = "bg:#A44A5B"
+style = "bg:#A44A5B fg:#120709"
 format = '[ $symbol $version]($style)'
 
 [dart]
-style = "bg: #A44A5B"
+style = "bg: #A44A5B fg:#120709"
 format = '[ $symbol $version]($style)'
 
 [nodejs]
-style = "bg: #A44A5B"
+style = "bg: #A44A5B fg:#120709"
 format = '[ $symbol $version]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#A44A5B"
+style = "bg:#A44A5B fg:#120709"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#A44A5B"
+style = "bg:#A44A5B fg:#120709"
 format = '[$all_status$ahead_behind ]($style)'
 
 [time]
 disabled = true
 time_format = "%R" # Hour:Minute Format
-style = "bg:#8f3f71"
+style = "bg:#8f3f71 fg:#120709"
 format = '[ $time ]($style)'
 
