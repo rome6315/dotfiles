@@ -1,0 +1,15 @@
+[calendars]
+
+[[private]]
+path = /home/roman/.local/share/khal/calendars/private
+type = calendar
+
+[locale]
+timeformat = %H:%M
+dateformat = %m/%d/%Y
+longdateformat = %m/%d/%Y
+datetimeformat = %m/%d/%Y %H:%M
+longdatetimeformat = %m/%d/%Y %H:%M
+
+[default]
+default_calendar = private
