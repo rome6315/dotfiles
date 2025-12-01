@@ -43,12 +43,15 @@ hyprpaper
 hyprpicker
 hyprshade
 imagemagick
+impala
 inotify-tools
 iw
 iwd
 iwgtk
+khal
 kitty
 kooha
+lazygit
 lf
 lib32-fontconfig
 libdisplay-info
@@ -65,6 +68,7 @@ linux-headers
 lshw
 lutris
 lxappearance
+ly
 magic-wormhole
 man-db
 mpv
@@ -105,6 +109,7 @@ python-pywal16
 qemu-desktop
 qt5-quickcontrols2
 qt5ct
+qt6ct
 qtile
 qtile-extras-git
 radeontop
@@ -120,6 +125,7 @@ steam
 stow
 swaync
 swww
+themix-full-git
 timeshift
 traceroute
 trashy
@@ -150,6 +156,7 @@ winegui-bin
 winegui-bin-debug
 winetricks
 wireless_tools
+wiremix
 wireplumber
 wl-clipboard
 wlroots0.15-debug
@@ -186,6 +193,7 @@ pistol-bin
 pistol-bin-debug
 python-pywal16
 qtile-extras-git
+themix-full-git
 trashy
 trashy-debug
 ttf-times-new-roman
