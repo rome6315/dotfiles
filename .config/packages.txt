@@ -13,6 +13,7 @@ btop
 calibre
 cava
 clang
+cmake
 cmatrix
 conky
 discord
@@ -27,7 +28,9 @@ fish
 flatpak
 font-manager
 fzf
+ghostscript
 git
+graphviz
 grim
 grimblast-git
 grub
@@ -56,6 +59,7 @@ lf
 lib32-fontconfig
 libdisplay-info
 libguestfs
+libpaper
 libpulse
 libreoffice-still
 librewolf-bin
@@ -103,6 +107,7 @@ pipewire-pulse
 pistol-bin
 pistol-bin-debug
 polkit-kde-agent
+poppler-data
 postgresql-libs
 python-pyquery
 python-pywal16
@@ -115,6 +120,7 @@ qtile-extras-git
 radeontop
 ripgrep
 rofi
+ruby
 sddm
 shellcheck
 shotcut
