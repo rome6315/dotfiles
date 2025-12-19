@@ -6,6 +6,7 @@ export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml # change starship co
 export EDITOR=nvim # neovim
 export XDG_PICTURES_DIR=$HOME/Pictures/
 export PATH="$HOME/.local/bin:$PATH"
+export DATE_LONG="$(date '+%B %d, %Y')"
 ##### END ENVIRONMENT VARS #####
 
 ##### OPTIONS #####

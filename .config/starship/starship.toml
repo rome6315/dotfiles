@@ -1,25 +1,24 @@
 format = """
-[░▒▓](#4D5994)\
-[](#4D5994)\
+[](#B0B0AF)\
 $os\
 $username\
-[](bg:#608EC4 fg:#4D5994)\
+[](bg:#a0a09f fg:#B0B0AF)\
 $directory\
-[](fg:#608EC4 bg:#26AAD3)\
+[](fg:#a0a09f bg:#90908f)\
 $git_branch\
 $git_status\
-[](bg:#26AAD3 fg:#26AAD3)\
-[ ](fg:#26AAD3)\
+[](bg:#90908f fg:#90908f)\
+[ ](fg:#90908f)\
 """
 
 [username]
 show_always = true
-style_user = "bg:#4D5994 fg:#A85B9B"
-style_root = "bg:#4D5994"
-format = '[  $user ]($style)'
+style_user = "bg:#B0B0AF"
+style_root = "bg:#B0B0AF"
+format = '[ $user ]($style)'
  
 [directory]
-style = "bg:#608EC4 fg:#A85B9B"
+style = "bg:#a0a09f"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -28,11 +27,31 @@ truncation_symbol = "…/"
 success_symbol = "[➜](bold purple)"
 error_symbol = "[✗](bold red)"
 
+[python]
+#symbol = ""
+style = "bg:#90908f"
+format = '[ $symbol $version]($style)'
+
+[dart]
+style = "bg: #90908f"
+format = '[ $symbol $version]($style)'
+
+[nodejs]
+style = "bg: #90908f"
+format = '[ $symbol $version]($style)'
+
 [git_branch]
 symbol = ""
-style = "bg:#26AAD3 fg:#A85B9B"
+style = "bg:#90908f"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#26AAD3 fg:#A85B9B"
+style = "bg:#90908f"
 format = '[$all_status$ahead_behind ]($style)'
+
+[time]
+disabled = true
+time_format = "%R" # Hour:Minute Format
+style = "bg:#8f3f71"
+format = '[ $time ]($style)'
+

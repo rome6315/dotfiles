@@ -1,0 +1,111 @@
+# color variables
+$gruvbox-green = rgb(a9b665)
+$transparent = rgba(0,0,0,0) # transparent
+$gruvbox-red = rgb(ea6962)
+$gruvbox-orange = rgb(e78a4e)
+$gruvbox-yellow = rgb(d8a657)
+$gruvbox-blue = rgb(7daea3)
+$gruvbox-brown = rgb(a89984)
+
+# background for lock screen
+background {
+  monitor = DP-1
+  path = ~/Pictures/Wallpapers/gruvbox-chinatown-original.png
+  blur_size = 2
+  blur_passes = 3
+}
+
+# make lock screen only display on DP-1
+background {
+  monitor = DP-2
+  color: black
+}
+
+# hide the cursor
+general {
+  hide_cursor = true
+}
+
+
+# where you type in the password
+input-field {
+    monitor = DP-1
+    size = 300, 50
+    outline_thickness = 3 # border thickness
+    dots_size = 0.1 # use dots to mask the password being typed
+    dots_spacing = 0.3
+    outer_color = $gruvbox-yellow # border
+    inner_color = $transparent # input background
+    font_color = $gruvbox-brown # text color
+    fade_on_empty = false # whether to show the input field at all times
+
+    position = 0, -280 
+    halign = center
+    valign = center
+}
+
+# text to display on lock screen (says hi)
+label {
+    monitor = DP-1
+    text = Hi 
+    color = $gruvbox-green
+    font_size = 45
+    font_family = Hack Nerd Font
+
+    position = -100, 440 
+    halign = center
+    valign = center
+}
+
+# text to display on lock screen (shows user's name)
+label {
+    monitor = DP-1
+    text =  $USER :)
+    color = $gruvbox-blue
+    font_size = 45
+    font_family = Hack Nerd Font
+
+    position = 100, 440 
+    halign = center
+    valign = center
+}
+
+# display time
+label {
+    monitor = DP-1
+    text = $TIME12
+    color = $gruvbox-orange
+    font_size = 45
+    font_family = Hack Nerd Font
+
+    position = 0, 300
+    halign = center
+    valign = center
+}
+
+# display time
+label {
+    monitor = DP-1
+    text = {cmd:%B %d %Y} 
+    color = $gruvbox-orange
+    font_size = 45
+    font_family = Hack Nerd Font
+
+    position = 0, 300
+    halign = center
+    valign = center
+}
+
+# lock icon
+label { 
+    monitor = DP-1
+    text = lock
+    shadow_passes = 1
+    shadow_boost = 0.5
+    color = $gruvbox-red
+    font_size = 70
+    font_family = Material Symbols Rounded
+    position = 0, 65
+    halign = center
+    valign = bottom
+}
