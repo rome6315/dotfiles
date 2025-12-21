@@ -8,3 +8,5 @@ selection=$(cat "$list_of_themes" | rofi -dmenu -i -p "Select a theme  ") #outpu
 if [ -n "$selection" ]; then
   $HOME/.config/scripts/theme-switcher/change_theme.sh "$selection"
 fi
+
+sleep 2
