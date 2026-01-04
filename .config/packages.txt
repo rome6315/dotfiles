@@ -62,7 +62,6 @@ libguestfs
 libpaper
 libpulse
 libreoffice-still
-librewolf-bin
 librewolf-bin-debug
 lightdm
 lightdm-gtk-greeter
@@ -190,7 +189,6 @@ aura
 grimblast-git
 hyprshade
 iwgtk
-librewolf-bin
 librewolf-bin-debug
 neofetch
 picom-git
