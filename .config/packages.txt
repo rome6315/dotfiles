@@ -1,6 +1,7 @@
 7zip
 alacritty
 amd-ucode
+awww
 baobab
 base
 base-devel
@@ -14,7 +15,9 @@ cava
 clang
 cmake
 cmatrix
+cndrvcups-lb-bin
 conky
+cups
 discord
 dnsmasq
 dunst
@@ -91,7 +94,9 @@ openbsd-netcat
 openrgb
 openvpn
 os-prober
+packettracer
 papirus-icon-theme
+parallel
 partitionmanager
 pavucontrol
 pcmanfm
@@ -127,7 +132,6 @@ starship
 steam
 stow
 swaync
-swww
 themix-full-git
 timeshift
 traceroute
@@ -181,10 +185,13 @@ zsh
 zsh-autosuggestions
 zsh-history-substring-search
 zsh-syntax-highlighting
+bridge-utils
+cndrvcups-lb-bin
 grimblast-git
 hyprshade
 iwgtk
 neofetch
+packettracer
 picom-git
 pipes.sh
 pistol-bin

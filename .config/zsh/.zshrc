@@ -29,6 +29,8 @@ alias grep='rg'
 alias find='fd' # changing find to fd
 alias cat='bat' # changing cat to bat
 
+alias texture='./gitclones/linux-bsp-casefolding-workaround/lbspcfw.sh' #update cs source map cases for texture fix
+
 alias config='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME' #bare git repo to push/pull my config
 
 alias spacehog='du -Sh | sort -rh | head -10' #display top 10 directories that take up most space
