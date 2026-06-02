@@ -1,6 +1,7 @@
 7zip
 alacritty
 amd-ucode
+asdf-vm
 awww
 baobab
 base
@@ -20,6 +21,7 @@ conky
 cups
 discord
 dnsmasq
+dolphin
 dunst
 efibootmgr
 eza
@@ -185,6 +187,7 @@ zsh
 zsh-autosuggestions
 zsh-history-substring-search
 zsh-syntax-highlighting
+asdf-vm
 bridge-utils
 cndrvcups-lb-bin
 grimblast-git
