@@ -1,1 +1,62 @@
-@theme 'themes/irithyll.rasi'
+@import "colors.rasi"
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    drun-display-format: "{name}";
+    disable-history: false;
+}
+
+* {
+    background-color: @surface-container;
+    text-color:       @primary;
+    border-color:     @primary;
+}
+
+window {
+    width: 325px;
+    border: 3px;
+    background-color: @surface-container;
+    border-radius: 3px;
+}
+
+mainbox {
+    padding: 0px;
+}
+
+inputbar {
+    enabled: false;
+}
+
+listview {
+    lines: 12;
+    scrollbar: false;
+    background-color: @surface-container;
+    border: 0px;
+}
+
+element normal.normal {
+    background-color: @surface-container;
+    text-color: @primary;
+}
+
+element alternate.normal {
+    background-color: @surface-container;
+    text-color: @tertiary;
+}
+
+element selected.normal {
+    background-color: @tertiary;
+    text-color: @surface-container;
+    border-radius: 3px;
+}
+
+element-icon {
+    size: 24px;
+    background-color: inherit;
+}
+
+element-text {
+    vertical-align: 0.5;
+    background-color: inherit;
+}

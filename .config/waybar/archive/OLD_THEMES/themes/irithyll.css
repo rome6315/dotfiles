@@ -1,0 +1,170 @@
+@define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
+@define-color bg #0e1c21; /* background color for the modules */ 
+@define-color irithyll-orange #9F7761;
+@define-color irithyll-blue #6C8FA1;
+@define-color irithyll-purple #3F6580;
+@define-color irithyll-teal #5A788A;
+@define-color button #9F7761; /* color for workspace buttons */
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+   /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: Hack Nerd Font;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: @transparent; 
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    color: @irithyll-purple;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @button;
+    margin-right: 5px;
+}
+
+#workspaces button.focused {
+    color: @bg;
+    background: @focused;
+    border-radius: 10px;
+}
+
+#workspaces {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-image: linear-gradient(to right, @irithyll-blue 0%,@irithyll-blue 45%, @irithyll-purple 75%, @irithyll-purple 100%) 1;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @irithyll-blue;
+    color: @button;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+#temperature {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @irithyll-blue;
+    color: @button;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#memory {
+    border-bottom: 3px solid;
+    border-color: @irithyll-purple;
+    border-radius: 3px;
+    background-color: @bg;
+    color: @button;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#network {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @irithyll-purple;
+    color: @button;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pulseaudio {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @irithyll-purple;
+    background-color: @bg;
+    color: @button;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#pulseaudio.muted {
+    background-color: @bg;
+}
+
+#custom-updates {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @irithyll-blue;
+    color: @button;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#custom-powermenu {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @irithyll-blue;
+    color: @button;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-dotfiles {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @irithyll-blue;
+    color: @button;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-theme {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @irithyll-purple;
+    color: @button;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

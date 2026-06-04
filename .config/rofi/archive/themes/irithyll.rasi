@@ -1,0 +1,153 @@
+/*****----- Global Properties -----*****/
+* {
+    background:                  #0E1D32;
+    irithyll-purple: #3F6580;
+    irithyll-blue: #6C8FA1;
+    irithyll-orange: #9F7761;
+}
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       1000px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    border-radius:               3px;
+    background-image: linear-gradient(45deg, #3F6580, #6C8FA1);
+    cursor:                      "default";
+    padding: 			 3px;
+    /* background-color:            @background; */
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listbox" ];
+}
+
+imagebox {
+    padding:                     20px;
+    background-color:            transparent;
+    background-image:            url("~/.config/rofi/images/irithyll.png", height);
+    orientation:                 vertical;
+    children:                    [ "inputbar", "dummy"];
+}
+
+listbox {
+    spacing:                     20px;
+    padding:                     20px;
+    background-color:            @background;
+    orientation:                 vertical;
+    children:                    ["listview" ];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     15px;
+    background-color:            @background;
+    text-color:                  @irithyll-purple;
+    border:			 2px solid;
+    border-radius: 		 3px;
+    border-color:		 @irithyll-blue;
+    children:                    [ "textbox-prompt-colon", "entry" ];
+}
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     10px;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     15px;
+    padding:                     8px;
+    border-radius:               10px;
+    background-color:            transparent;
+    cursor:                      pointer;
+}
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  @irithyll-blue;
+    border: 			 2px solid;
+    border-color:		 @irithyll-purple;
+}
+
+element selected.normal {
+    background-color:            @irithyll-orange;
+}
+
+element alternate.normal {
+    background-color: 		 inherit;
+    text-color: 		 @irithyll-purple;
+    border: 			 2px solid;
+    border-color: 		 @irithyll-blue;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+configuration {
+    modi: "drun";
+    font: "Hack Nerd Font Bold 11";
+    hide-scrollbar: true;
+    show-icons:                 true;
+    display-drun:               "";
+	  drun-display-format:        "{name}";
+}

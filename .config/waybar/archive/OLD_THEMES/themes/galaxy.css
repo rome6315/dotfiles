@@ -1,0 +1,169 @@
+@define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
+@define-color bg #0E1D32; /* background color for the modules */ 
+@define-color galaxy-pink #a85b9b;
+@define-color galaxy-blue #26aad3;
+@define-color galaxy-blue-alt #0e6296;
+@define-color button #626c78; /* color for workspace buttons */
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+   /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: Hack Nerd Font;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: @transparent; 
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    color: @galaxy-blue;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @button;
+    margin-right: 5px;
+}
+
+#workspaces button.focused {
+    color: @bg;
+    background: @focused;
+    border-radius: 10px;
+}
+
+#workspaces {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-image: linear-gradient(to right, @galaxy-pink 0%,@galaxy-pink 45%, @galaxy-blue 75%, @galaxy-blue 100%) 1;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @galaxy-pink;
+    color: @galaxy-pink;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+#temperature {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @galaxy-pink;
+    color: @galaxy-pink;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#memory {
+    border-bottom: 3px solid;
+    border-color: @galaxy-blue;
+    border-radius: 3px;
+    background-color: @bg;
+    color: @galaxy-blue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#network {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @galaxy-blue;
+    color: @galaxy-blue;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pulseaudio {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @galaxy-blue;
+    background-color: @bg;
+    color: @galaxy-blue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#pulseaudio.muted {
+    background-color: @bg;
+}
+
+#custom-updates {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @galaxy-pink;
+    color: @galaxy-pink;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#custom-powermenu {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @galaxy-pink;
+    color: @galaxy-pink;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-dotfiles {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @galaxy-pink;
+    color: @galaxy-pink;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-theme {
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    border-color: @galaxy-blue;
+    color: @galaxy-blue;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

@@ -63,7 +63,7 @@ HISTFILE=~/.config/zsh/.zsh_history      # Path to the history file
 ##### END HISTORY SETTINGS #####
 
 ##### PLUGINS #####
-nitch # run system fetch
+fastfetch # run system fetch
 eval "$(starship init zsh)" # init prompt config
 source <(fzf --zsh) # Set up fzf key bindings and fuzzy completion
 # load history and highlighting plugins

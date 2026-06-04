@@ -1,0 +1,20 @@
+format = '''
+$directory$git_branch
+$character'''
+
+palette = 'colors'
+
+[palettes.colors]
+primary = '{{colors.primary.default.hex}}'
+tertiary = '{{colors.tertiary.default.hex}}'
+subtle = '{{colors.on_surface_variant.default.hex}}'
+
+[character]
+success_symbol = '[🞈](tertiary bold)'
+error_symbol = '[🞈](red bold)'
+
+[directory]
+format = '[$path ](primary)'
+
+[git_branch]
+format = '[on ](subtle)[$branch](tertiary)'
