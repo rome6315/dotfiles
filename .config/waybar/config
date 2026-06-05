@@ -4,9 +4,9 @@
   "margin-bottom": 8,
   "output": ["DP-1", "DP-2"],
 
-  "modules-left": ["clock", "custom/updates"],
+  "modules-left": ["custom/powermenu", "custom/updates", "custom/dotfiles"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["pulseaudio", "network"],
+  "modules-right": ["network", "pulseaudio", "clock"],
 
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -31,8 +31,6 @@
 
   "clock": {
     "format": "{:%I:%M}",
-    "tooltip-format": "Click for Power Menu",
-    "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/powermenu"
   },
 
   "pulseaudio": {
@@ -50,7 +48,7 @@
 
   // uses the waybar-module-pacman-git aur package
 "custom/updates": {
-    "format": "󰇚 {}",
+    "format": "󰇚{}",
     "return-type": "json",
     "format-icons": {
         "has-updates": "󰇚 ",
@@ -58,5 +56,19 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300",
+  },
+
+  // check status of dotfile's (if they need pushed or not)
+  "custom/dotfiles": {
+    "format": "{}",
+    "interval": 10,
+    "exec": "~/.config/waybar/scripts/dotfile_status.sh 2> /dev/null",
+    "return-type": "json",
+  },
+
+  // powermenu through rofi
+  "custom/powermenu": {
+    "format": "󰐥",
+    "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/powermenu"
   }
 }

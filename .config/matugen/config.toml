@@ -16,7 +16,7 @@ set = true
 command = "awww img --transition-type wipe --transition-fps 144 {{ image }}"
 
 [templates.waybar]
-input_path = '~/.config/matugen/templates/colors.css'
+input_path = '~/.config/matugen/templates/waybar.css'
 output_path = '~/.config/waybar/colors.css'
 post_hook = 'pkill -SIGUSR2 waybar'
 
