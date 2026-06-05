@@ -47,23 +47,27 @@ window#waybar {
 #custom-powermenu {
 	color: @tertiary;
     font-size: 16px;
+	margin-right: 0px;
 }
 
 #clock {
-	color: @primary;
+	color: @tertiary;
 	font-size: 16px;
+	margin-right: 30px;
 }
 
 #pulseaudio {
 	color: @primary;
-	font-size: 16px;
+	font-size: 20px;
+	margin-right: 30px;
 }
 
 #network {
 	color: @tertiary;
-    font-size: 16px;
+    font-size: 25px;
 }
 
-#custom-separator {
-    margin: 0 12px; 
+#custom-updates {
+    color: @primary;
+	font-size: 16px; 
 }

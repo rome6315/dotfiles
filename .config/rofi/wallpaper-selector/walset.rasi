@@ -1,0 +1,53 @@
+@import "~/.config/rofi/colors.rasi"
+
+* {
+    background-color: @surface-container;
+    text-color: @primary;
+    border-color:     @primary;
+}
+
+window {
+    border: 3px;
+    border-radius: 3px;
+}
+
+listview {
+    columns:       5;
+    lines:         3;
+    layout:        vertical;
+    fixed-height:  true;
+    spacing:       15px;
+    padding:       10px;
+}
+
+element {
+    orientation:   vertical;
+    spacing:       15px;
+    padding:       20px 10px;
+}
+
+element normal normal {
+    text-color: @primary;
+}
+
+element alternate normal {
+    text-color: @tertiary;
+}
+
+element selected {
+    border: 3px;
+    border-radius: 3px;
+    border-color: @tertiary;
+}
+
+element-icon {
+    size: 100px;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}
+
+inputbar {
+    enabled: false;
+}

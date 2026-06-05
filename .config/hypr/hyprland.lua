@@ -33,7 +33,7 @@ hl.config({
         },
     },
     decoration = {
-        screen_shader = "~/.config/hypr/shaders/vibrance.gsl",
+        screen_shader = "~/.config/hypr/shaders/vibrance.glsl",
         rounding = 3,
     },
     dwindle = {

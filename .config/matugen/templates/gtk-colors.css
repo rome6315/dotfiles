@@ -1,3 +1,7 @@
+* {
+    font-family: "Iosevka Nerd Font Bold", monospace;
+}
+
 @define-color accent_color {{colors.primary_fixed_dim.default.hex}};
 @define-color accent_fg_color {{colors.on_primary_fixed.default.hex}};
 @define-color accent_bg_color {{colors.primary_fixed_dim.default.hex}};

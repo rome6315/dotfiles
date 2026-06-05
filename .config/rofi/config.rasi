@@ -2,6 +2,7 @@
 
 configuration {
     modi: "drun";
+    font: "Iosevka Nerd Font Bold 13";
     show-icons: true;
     drun-display-format: "{name}";
     disable-history: false;

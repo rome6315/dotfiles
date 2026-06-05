@@ -6,14 +6,15 @@ hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + P", hl.dsp.window.pseudo())
 
 -- application specific keybinds
-hl.bind("SUPER + W", hl.dsp.exec_cmd("~/.config/waybar/scripts/launch.sh"))
+hl.bind("SUPER + W", hl.dsp.exec_cmd("~/.config/waybar/scripts/launch.sh")) -- reload waybar
 hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty"))
 hl.bind("SUPER + F", hl.dsp.exec_cmd("pcmanfm"))
 hl.bind("SUPER + B", hl.dsp.exec_cmd("bitwarden-desktop"))
 hl.bind("SUPER + X", hl.dsp.exec_cmd("firefox"))
 hl.bind("SUPER + V", hl.dsp.exec_cmd("rofi -show drun"))
 -- hl.bind("SUPER + T", hl.dsp.exec_cmd("~/.config/scripts/theme-switcher/rofi_select_theme.sh"))
-hl.bind("SUPER + SHIFT + P", hl.dsp.exec_cmd("rofi -show power-menu -modi power-menu:~/.local/bin/powermenu"))
+hl.bind("SUPER + SHIFT + P", hl.dsp.exec_cmd("rofi -show power-menu -modi power-menu:~/.local/bin/powermenu")) -- launch powermenu
+hl.bind("SUPER + T", hl.dsp.exec_cmd("~/.config/rofi/wallpaper-selector/walset.sh")) -- open wallpaper selector
 
 
 -- move focus with SUPER + arrow keys

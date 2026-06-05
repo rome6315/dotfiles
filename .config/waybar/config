@@ -4,9 +4,9 @@
   "margin-bottom": 8,
   "output": ["DP-1", "DP-2"],
 
-  "modules-left": ["custom/powermenu", "custom/separator", "clock"],
+  "modules-left": ["clock", "custom/updates"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["pulseaudio","custom/separator", "network"],
+  "modules-right": ["pulseaudio", "network"],
 
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -21,20 +21,22 @@
   },
 
   "network": {
-    "format-wifi": " {essid}",
+    "format-wifi": "",
     "format-ethernet": "{ifname} 󰈀",
     "tooltip-format": "{ipaddr}/{cidr} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "Disconnected ⚠",
+    "format-disconnected": "⚠",
     "on-click": "kitty --class=kittyfloat impala"
   },
 
   "clock": {
-    "format": "{:%I:%M %p - %b %d}"
+    "format": "{:%I:%M}",
+    "tooltip-format": "Click for Power Menu",
+    "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/powermenu"
   },
 
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}",
     "format-bluetooth": " {volume}%",
     "format-muted": "",
     "format-icons": {
@@ -46,14 +48,15 @@
     "on-click": "kitty --class=kittyfloat wiremix"
   },
 
-  "custom/powermenu": {
-    "format": " ",
-    "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/powermenu"
-  },
-
-  "custom/separator": {
-    "format": "|",
-    "interval": "once",
-    "tooltip": false
+  // uses the waybar-module-pacman-git aur package
+"custom/updates": {
+    "format": "󰇚 {}",
+    "return-type": "json",
+    "format-icons": {
+        "has-updates": "󰇚 ",
+        "updated": " "
+    },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300",
   }
 }
