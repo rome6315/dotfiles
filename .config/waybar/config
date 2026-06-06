@@ -23,7 +23,7 @@
   "network": {
     "format-wifi": "",
     "format-ethernet": "{ifname} 󰈀",
-    "tooltip-format": "{ipaddr}/{cidr} via {gwaddr} ",
+    "tooltip-format": "Launch Impala",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "⚠",
     "on-click": "kitty --class=kittyfloat impala"
@@ -31,6 +31,7 @@
 
   "clock": {
     "format": "{:%I:%M}",
+    "tooltip": false
   },
 
   "pulseaudio": {
@@ -61,7 +62,7 @@
   // check status of dotfile's (if they need pushed or not)
   "custom/dotfiles": {
     "format": "{}",
-    "interval": 10,
+    "interval": 900,
     "exec": "~/.config/waybar/scripts/dotfile_status.sh 2> /dev/null",
     "return-type": "json",
   },
@@ -69,6 +70,7 @@
   // powermenu through rofi
   "custom/powermenu": {
     "format": "󰐥",
-    "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/powermenu"
+    "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/powermenu",
+    "tooltip-format": "Launch Rofi Powermenu"
   }
 }

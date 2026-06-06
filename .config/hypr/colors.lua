@@ -1,5 +1,5 @@
 return {
-    image = "/home/roman/Pictures/Matugen/rivendale.jpg",
+    image = "/home/roman/Pictures/Matugen/shire.png",
 
     background = "0xff17130b",
 
@@ -21,7 +21,7 @@ return {
 
     on_primary = "0xff402d00",
 
-    on_primary_container = "0xffffdea3",
+    on_primary_container = "0xffffdea2",
 
     on_primary_fixed = "0xff261900",
 
@@ -45,7 +45,7 @@ return {
 
     on_tertiary_fixed = "0xff092008",
 
-    on_tertiary_fixed_variant = "0xff344d2f",
+    on_tertiary_fixed_variant = "0xff344d30",
 
     outline = "0xff9a8f80",
 
@@ -55,7 +55,7 @@ return {
 
     primary_container = "0xff5c4200",
 
-    primary_fixed = "0xffffdea3",
+    primary_fixed = "0xffffdea2",
 
     primary_fixed_dim = "0xffebc16c",
 
@@ -71,7 +71,7 @@ return {
 
     shadow = "0xff000000",
 
-    source_color = "0xffa4906c",
+    source_color = "0xffd5b985",
 
     surface = "0xff17130b",
 
@@ -95,7 +95,7 @@ return {
 
     tertiary = "0xffb1cfa8",
 
-    tertiary_container = "0xff344d2f",
+    tertiary_container = "0xff344d30",
 
     tertiary_fixed = "0xffcdebc3",
 

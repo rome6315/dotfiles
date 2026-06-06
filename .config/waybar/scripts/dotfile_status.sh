@@ -6,7 +6,6 @@ REPO_PATH="$HOME/dotfiles"
 cd "$REPO_PATH"
 
 # ignore these files since all they do is change colors
-#IGNORE_FILES='waybar/style.css|cava/config|dunst/dunstrc|hypr/scripts/set_wallpaper.sh|hypr/theme.conf|kitty/current-theme.conf|kitty/kitty.conf|kitty/kitty.conf.bak|nwg-dock-hyprland/theme.css|rofi/config.rasi|starship/starship.toml|scripts/theme-switcher/current_theme.txt'
 IGNORE_FILES='dunstrc|starship.toml|kitty/themes/Matugen.conf|kitty/current-theme.conf|colors\.[a-z]+|\.uuid$'
 
 # get number of unstaged changes (excluding ignored files)
