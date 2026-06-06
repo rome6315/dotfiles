@@ -6,6 +6,7 @@ configuration {
     show-icons: true;
     drun-display-format: "{name}";
     disable-history: false;
+    matching: "prefix";
 }
 
 * {

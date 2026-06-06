@@ -16,9 +16,9 @@ unstaged_files=($(git diff --name-only | grep -v -E "$IGNORE_FILES"))
 
 # set status var which will be used to display in waybar
 if [[ $unstaged -gt 0 ]]; then
-  status="$unstaged"
+  status=" $unstaged"
 else
-  status="Clean"
+  status=" Clean"
 fi
 
 # tooltip to display which files were changed
