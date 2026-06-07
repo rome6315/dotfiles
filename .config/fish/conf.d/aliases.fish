@@ -1,11 +1,8 @@
-#just incase :)
 alias vim='nvim' 
-
-# changing grep to ripgrep
-alias grep='rg'
-
+alias grep='rg' # changing grep to ripgrep
 alias find='fd' # changing find to fd
 alias cat='bat' # changing cat to bat
+alias c='codium'
 
 # changing "ls" to "eza"
 alias ls='eza -la --color=always --group-directories-first' # my preferred listing

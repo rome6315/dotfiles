@@ -1,0 +1,111 @@
+* {
+all: unset;
+font-family: Iosevka Nerd Font Propo, monospace;
+font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#workspaces {
+    background-color: @surface_container;
+    border: 3px solid @primary;
+    border-radius: 99px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 12px;
+}
+
+#workspaces button {
+	color: @tertiary;
+	padding: 0px 5px;
+	border-radius: 99px;
+}
+
+#workspaces button.active {
+    background-color: @tertiary;
+    color: @surface_container;
+    padding: 2px 8px;
+    margin: 4px 3px;
+}
+
+#custom-dotfiles {
+    border-radius: 99px 0 0 99px;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    background-color: @surface_container;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: @primary;
+	font-size: 16px; 
+}
+
+#custom-updates {
+    border-radius: 0 99px 99px 0;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-right: 3px solid;
+    background-color: @surface_container;
+    padding-left: 10px;
+    padding-right: 10px;
+	color: @tertiary;
+	font-size: 16px;
+}
+
+#clock {
+    border-radius: 99px;
+    border: 3px solid @tertiary;
+    background-color: @surface_container;
+    padding-left: 10px;
+    padding-right: 10px;
+	color: @primary;
+	font-size: 16px;
+}
+
+#network {
+    border-radius: 99px 0 0 99px;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    background-color: @surface_container;
+    padding-left: 10px;
+    padding-right: 10px;
+	color: @primary;
+    font-size: 20px;
+}
+
+#pulseaudio {
+    border-radius: 0 99px 99px 0;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-right: 3px solid;
+    background-color: @surface_container;
+    padding-left: 10px;
+    padding-right: 10px;
+	color: @tertiary;
+	font-size: 20px;
+}
+
+#custom-powermenu {
+    border-radius: 99px;
+    border: 3px solid;
+    background-color: @surface_container;
+    padding-left: 10px;
+    padding-right: 10px;
+	color: @primary;
+    font-size: 25px;
+    margin-left: 12px;
+}
+
+tooltip {
+    background: @surface_container;
+    border: 1px solid @primary;
+    border-radius: 6px;
+}
+
+tooltip label {
+    color: @on_surface;
+    padding: 4px 8px;
+}

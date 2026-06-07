@@ -15,7 +15,7 @@ hl.bind("SUPER + V", hl.dsp.exec_cmd("rofi -show drun"))
 -- hl.bind("SUPER + T", hl.dsp.exec_cmd("~/.config/scripts/theme-switcher/rofi_select_theme.sh"))
 hl.bind("SUPER + SHIFT + P", hl.dsp.exec_cmd("rofi -show power-menu -modi power-menu:~/.local/bin/powermenu")) -- launch powermenu
 hl.bind("SUPER + T", hl.dsp.exec_cmd("~/.config/rofi/wallpaper-selector/walset.sh")) -- open wallpaper selector
-hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd("~/.config/rofi/waybar-selector/waybar-selector-wrapper.sh")) -- open waybar selector
+hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd("~/.config/rofi/waybar-selector/waybar-selector.sh")) -- open waybar selector
 
 
 -- move focus with SUPER + arrow keys

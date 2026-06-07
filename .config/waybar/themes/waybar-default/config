@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "width": 1000,
+  "width": 800,
   "margin-bottom": 8,
   "output": ["DP-1", "DP-2"],
 

@@ -27,3 +27,8 @@ theme_dir="$THEMES_DIR/$chosen"
 
 # copy the theme config
 cp "$theme_dir/config" "$CONFIG"
+
+# restart waybar to apply new theme/style
+pkill -x waybar
+sleep 0.5
+waybar &
