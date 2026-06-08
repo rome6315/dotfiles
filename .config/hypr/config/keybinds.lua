@@ -8,7 +8,7 @@ hl.bind("SUPER + P", hl.dsp.window.pseudo())
 -- application specific keybinds
 hl.bind("SUPER + W", hl.dsp.exec_cmd("~/.config/waybar/scripts/launch.sh")) -- reload waybar
 hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty"))
-hl.bind("SUPER + F", hl.dsp.exec_cmd("pcmanfm"))
+hl.bind("SUPER + F", hl.dsp.exec_cmd("thunar"))
 hl.bind("SUPER + B", hl.dsp.exec_cmd("bitwarden-desktop"))
 hl.bind("SUPER + X", hl.dsp.exec_cmd("firefox"))
 hl.bind("SUPER + V", hl.dsp.exec_cmd("rofi -show drun"))

@@ -1,8 +1,8 @@
 -- window rules
 hl.window_rule({
-    name = "windowrule-1",
+    name = "Btrfs Assistant",
     match = {
-        class = "timeshift-gtk",
+        class = "btrfs-assistant",
     },
     float = true,
     size = "1000 600",
@@ -10,7 +10,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "windowrule-2",
+    name = "Bitwarden",
     match = {
         class = "Bitwarden",
     },
@@ -20,17 +20,18 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "windowrule-3",
+    name = "Thunar",
     match = {
-        class = "pcmanfm",
+        class = "thunar",
     },
     float = true,
     center = true,
+    size = "1000 600",
 })
 
 -- define custom class name so that kitty will open floating only from the waybar modules
 hl.window_rule({
-    name = "windowrule-4",
+    name = "Float Apps in Kitty",
     match = {
         class = "kittyfloat",
     },
@@ -40,15 +41,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "windowrule-5",
-    match = {
-        class = "pcmanfm",
-    },
-    size = "1000 600",
-})
-
-hl.window_rule({
-    name = "windowrule-6",
+    name = "Idle Inhibit for Games",
     match = {
         fullscreen = 1,
     },
@@ -56,7 +49,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "windowrule-7",
+    name = "Idle Inhibit for YouTube Music",
     match = {
         title = "YouTube Music",
     },
@@ -65,7 +58,7 @@ hl.window_rule({
 
 -- make steam stop closing when you fullscreen a game. tbh not sure which one of these three rules does the trick, so I just keep them all
 hl.window_rule({
-    name = "windowrule-8",
+    name = "Steam1",
     match = {
         title = "Steam",
     },
@@ -73,7 +66,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "windowrule-9",
+    name = "Steam2",
     match = {
         title = "Steam",
         class = "steam",
@@ -82,12 +75,3 @@ hl.window_rule({
     -- TODO: manual review — unmapped window rule action: "move"
     no_anim = true,
 })
-
-hl.window_rule({
-    name = "windowrule-10",
-    match = {
-        class = "cstrike_linux64",
-    },
-    fullscreen = true,
-})
-
