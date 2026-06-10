@@ -41,7 +41,7 @@ element selected {
 }
 
 element-icon {
-    size: 100px;
+    size: 200px;
 }
 
 element-text {

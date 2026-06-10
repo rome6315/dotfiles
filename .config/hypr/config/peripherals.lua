@@ -4,14 +4,14 @@
 hl.monitor({
     output = "DP-2",
     mode = "highrr",
-    position = "0x-1080",
+    position = "2560x-0", -- to the right
     scale = 1,
 })
 
--- MSI 165 Hz (main monitor)
+-- AOC 240 Hz
 hl.monitor({
     output = "DP-1",
-    mode = "1920x1080@144",
+    mode = "2560x1440@200",
     position = "0x0",
     vrr = 2, -- make sure to cap monitor at below max fps both in this config and in-game
     scale = 1,
