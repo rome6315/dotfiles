@@ -18,7 +18,7 @@ separator_height = 2
 padding = 8
 horizontal_padding = 8
 text_icon_padding = 0
-frame_width = 2
+frame_width = 0
 sort = yes
 font = Iosevka Nerd Font Bold 12
 line_height = 0
@@ -43,7 +43,7 @@ browser = /usr/bin/xdg-open
 always_run_script = true
 title = Dunst
 class = Dunst
-corner_radius = 8
+corner_radius = 10
 ignore_dbusclose = false
 force_xwayland = false
 force_xinerama = false
@@ -51,24 +51,24 @@ mouse_left_click = close_current
 mouse_middle_click = do_action, close_current
 mouse_right_click = close_all
 separator_color = frame
-frame_color = "#d5bbfc"
-highlight = "#d5bbfc"
-separator_color= "#958e99"
+frame_color = "#ebc16c"
+highlight = "#ebc16c"
+separator_color= "#9a8f80"
 [experimental]
 per_monitor_dpi = false
 [urgency_low]
 timeout = 3
-background = "#151218"
-foreground = "#f1b7c3"
-highlight = "#513c73"
+background = "#17130b"
+foreground = "#b1cfa8"
+highlight = "#5c4200"
 [urgency_normal]
 timeout = 6
-background = "#151218"
-foreground = "#f1b7c3"
-highlight = "#513c73"
+background = "#17130b"
+foreground = "#b1cfa8"
+highlight = "#5c4200"
 [urgency_critical]
 timeout = 0
-background = "#151218"
-foreground = "#f1b7c3"
+background = "#17130b"
+foreground = "#b1cfa8"
 highlight = "#ffb4ab"
 

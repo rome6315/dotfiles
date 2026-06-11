@@ -5,10 +5,7 @@ font-weight: bold;
 }
 
 window#waybar {
-    background: linear-gradient(@surface_container, @surface_container) padding-box,
-                radial-gradient(ellipse at bottom center, @tertiary, @primary) border-box;
-    border: 2px solid transparent;
-    border-top: none;
+    background: @surface_container;
     border-radius: 0 0 10px 10px;
 }
 
@@ -78,11 +75,10 @@ window#waybar {
 
 tooltip {
     background: @surface_container;
-    border: 1px solid @primary;
     border-radius: 6px;
 }
 
 tooltip label {
-    color: @on_surface;
+    color: @primary;
     padding: 4px 8px;
 }
