@@ -5,7 +5,7 @@ matugen
 awww
 wiremixer
 impala
-hyprpolkitagent
+polkit-gnome
 hpyridle
 hpyrlock
 starship

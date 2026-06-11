@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "width": 800,
+  "width": 600,
   "margin-bottom": 8,
   "output": ["DP-1", "DP-2"],
 
@@ -62,7 +62,7 @@
   // check status of dotfile's (if they need pushed or not)
   "custom/dotfiles": {
     "format": "{}",
-    "interval": 10,
+    "interval": 900,
     "exec": "~/.config/waybar/scripts/dotfile_status.sh 2> /dev/null",
     "return-type": "json",
   },
