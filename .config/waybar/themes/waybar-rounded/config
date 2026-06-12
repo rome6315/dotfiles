@@ -5,9 +5,9 @@
   "margin-bottom": 8,
   "output": ["DP-1", "DP-2"],
 
-  "modules-left": ["hyprland/workspaces", "custom/dotfiles", "custom/updates"],
-  "modules-center": ["clock"],
-  "modules-right": ["network", "pulseaudio", "custom/powermenu"],
+  "modules-left": ["custom/powermenu", "custom/updates", "custom/dotfiles"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["network", "pulseaudio", "clock"],
 
 
   "network": {

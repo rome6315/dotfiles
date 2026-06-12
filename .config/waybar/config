@@ -1,6 +1,7 @@
-{
+{ 
   "layer": "top",
   "width": 600,
+  "margin-top": 4,
   "margin-bottom": 8,
   "output": ["DP-1", "DP-2"],
 
@@ -8,17 +9,6 @@
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["network", "pulseaudio", "clock"],
 
-  "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": ""
-    }
-  },
 
   "network": {
     "format-wifi": "",
@@ -62,7 +52,7 @@
   // check status of dotfile's (if they need pushed or not)
   "custom/dotfiles": {
     "format": "{}",
-    "interval": 900,
+    "interval": 10,
     "exec": "~/.config/waybar/scripts/dotfile_status.sh 2> /dev/null",
     "return-type": "json",
   },

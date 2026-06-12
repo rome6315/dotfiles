@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "width": 600,
-  "margin-bottom": 8,
+  "margin-bottom": 4,
   "output": ["DP-1", "DP-2"],
 
   "modules-left": ["custom/powermenu", "custom/updates", "custom/dotfiles"],

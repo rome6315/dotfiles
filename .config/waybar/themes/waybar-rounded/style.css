@@ -5,107 +5,75 @@ font-weight: bold;
 }
 
 window#waybar {
-    background-color: transparent;
+    background: @surface_container;
+    border-radius: 50px;
 }
 
 #workspaces {
-    background-color: @surface_container;
-    border: 3px solid @primary;
-    border-radius: 99px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 12px;
+	margin: 6px 10px 6px 10px;
 }
 
 #workspaces button {
-	color: @tertiary;
-	padding: 0px 5px;
-	border-radius: 99px;
+	color: @on_surface_variant;
+	padding: 0px 6px;
+	border-radius: 16px;
+	margin: 0 2px;
+    transition: all 200ms ease-in-out;
 }
 
 #workspaces button.active {
-    background-color: @tertiary;
+    background: linear-gradient(135deg, @primary 50%, @tertiary 60%);/*@primary_fixed_dim;*/
     color: @surface_container;
-    padding: 2px 8px;
-    margin: 4px 3px;
+	min-width: 40px;
+	transition: all 200ms ease-in-out;
+}
+.modules-left {
+	margin-left: 12px;
+}
+.modules-right {
+	margin-right: 12px;
+}
+
+#custom-powermenu {
+	color: @primary;
+    font-size: 25px;
+}
+
+#custom-updates {
+	color: @tertiary;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 16px;
 }
 
 #custom-dotfiles {
-    border-radius: 99px 0 0 99px;
-    border-top: 3px solid;
-    border-bottom: 3px solid;
-    border-left: 3px solid;
-    background-color: @surface_container;
-    padding-left: 10px;
-    padding-right: 10px;
     color: @primary;
 	font-size: 16px; 
 }
 
-#custom-updates {
-    border-radius: 0 99px 99px 0;
-    border-top: 3px solid;
-    border-bottom: 3px solid;
-    border-right: 3px solid;
-    background-color: @surface_container;
-    padding-left: 10px;
-    padding-right: 10px;
-	color: @tertiary;
-	font-size: 16px;
-}
-
-#clock {
-    border-radius: 99px;
-    border: 3px solid @tertiary;
-    background-color: @surface_container;
-    padding-left: 10px;
-    padding-right: 10px;
-	color: @primary;
-	font-size: 16px;
-}
-
 #network {
-    border-radius: 99px 0 0 99px;
-    border-top: 3px solid;
-    border-bottom: 3px solid;
-    border-left: 3px solid;
-    background-color: @surface_container;
-    padding-left: 10px;
-    padding-right: 10px;
 	color: @primary;
     font-size: 20px;
 }
 
 #pulseaudio {
-    border-radius: 0 99px 99px 0;
-    border-top: 3px solid;
-    border-bottom: 3px solid;
-    border-right: 3px solid;
-    background-color: @surface_container;
-    padding-left: 10px;
-    padding-right: 10px;
 	color: @tertiary;
 	font-size: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
-#custom-powermenu {
-    border-radius: 99px;
-    border: 3px solid;
-    background-color: @surface_container;
-    padding-left: 10px;
-    padding-right: 10px;
+#clock {
 	color: @primary;
-    font-size: 25px;
-    margin-left: 12px;
+	font-size: 16px;
 }
 
 tooltip {
     background: @surface_container;
-    border: 1px solid @primary;
     border-radius: 6px;
 }
 
 tooltip label {
-    color: @on_surface;
+    color: @primary;
     padding: 4px 8px;
 }
