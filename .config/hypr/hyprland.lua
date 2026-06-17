@@ -15,9 +15,9 @@ hl.config({
 	gaps_in = 5,
         gaps_out = 5,
         border_size = 0,
-	col = {
+	-- col = {
             --active_border = { colors = {colors.primary, colors.tertiary}, angle = 90 },
-        },
+       -- },
     },
     decoration = {
         screen_shader = "~/.config/hypr/shaders/vibrance.glsl",

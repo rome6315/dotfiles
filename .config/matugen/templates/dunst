@@ -58,17 +58,17 @@ separator_color= "{{colors.outline.default.hex}}"
 per_monitor_dpi = false
 [urgency_low]
 timeout = 3
-background = "{{colors.surface.default.hex}}"
+background = "{{colors.surface_container.default.hex}}"
 foreground = "{{colors.tertiary.default.hex}}"
 highlight = "{{colors.primary_container.default.hex}}"
 [urgency_normal]
 timeout = 6
-background = "{{colors.surface.default.hex}}"
+background = "{{colors.surface_container.default.hex}}"
 foreground = "{{colors.tertiary.default.hex}}"
 highlight = "{{colors.primary_container.default.hex}}"
 [urgency_critical]
 timeout = 0
-background = "{{colors.surface.default.hex}}"
+background = "{{colors.surface_container.default.hex}}"
 foreground = "{{colors.tertiary.default.hex}}"
 highlight = "{{colors.error.default.hex}}"
 
