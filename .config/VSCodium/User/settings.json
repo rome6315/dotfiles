@@ -1,0 +1,16 @@
+{
+    "git.openRepositoryInParentFolders": "never",
+    "qt-qml.qmlls.useQmlImportPathEnvVar": true,
+    "workbench.editorAssociations": {
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+        "*.qrc": "qt-core.qrcEditor"
+    },
+    "qt-core.additionalQtPaths": [
+        {
+            "name": "Qt-5.15.19-linux-g++-x86_64_from_PATH",
+            "path": "/usr/sbin/qmake"
+        }
+    ],
+    "editor.formatOnSave": true,
+    "qmlFormat.command": "/usr/lib/qt6/bin/qmlformat"
+}

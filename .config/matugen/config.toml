@@ -52,3 +52,7 @@ output_path = '~/.config/starship/starship.toml'
 input_path = '~/.config/matugen/templates/gtk.css'
 output_path = '~/.config/gtk-3.0/colors.css'
 post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark'
+
+[templates.quickshell]
+input_path = "~/.config/matugen/templates/quickshell.json"
+output_path = "~/.local/state/quickshell/generated/colors.json"
