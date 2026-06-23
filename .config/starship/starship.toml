@@ -5,9 +5,9 @@ $character'''
 palette = 'colors'
 
 [palettes.colors]
-primary = '#80d4dc'
-tertiary = '#b7c7ea'
-subtle = '#bec8c9'
+primary = '#ffb691'
+tertiary = '#cfc890'
+subtle = '#d7c2b9'
 
 [character]
 success_symbol = '[🞈](tertiary bold)'
