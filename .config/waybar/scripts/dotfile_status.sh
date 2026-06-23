@@ -6,7 +6,7 @@ REPO_PATH="$HOME/dotfiles"
 cd "$REPO_PATH"
 
 # ignore these files since all they do is change colors
-IGNORE_FILES='dunstrc|starship.toml|kitty/themes/Matugen.conf|kitty/current-theme.conf|waybar/style.css|waybar/config|colors\.[a-z]+|\.uuid$'
+IGNORE_FILES='dunstrc|starship.toml|kitty/themes/Matugen.conf|kitty/current-theme.conf|waybar/style.css|waybar/config|colors\.[a-z]+|\.uuid$' 
 
 # get number of unstaged changes (excluding ignored files)
 unstaged=$(git diff --numstat | grep -v -E "$IGNORE_FILES" | wc -l)
