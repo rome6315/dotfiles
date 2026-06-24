@@ -4,6 +4,7 @@ import QtQuick.Layouts
 import Quickshell.Hyprland
 import qs.Matugen
 import qs.Services
+import qs.BarPopups
 
 ShellRoot {
 
@@ -15,9 +16,23 @@ ShellRoot {
         id: updatesService
     }
 
+    // create instance of UpdatesPopup
+    UpdatesPopup {
+        id: updatesPopup
+        service: updatesService
+        visible: false
+    }
+
     // create instance of DotfilesService
     DotfilesService {
         id: dotfilesService
+    }
+
+    // create instance of DotfilesPopup
+    DotfilesPopup {
+        id: dotfilesPopup
+        service: dotfilesService
+        visible: false
     }
 
     Variants {

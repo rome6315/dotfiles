@@ -56,7 +56,7 @@ Item {
     }
 
     Timer {
-        interval: 600000
+        interval: 600000 // 10 min
         running: true
         repeat: true
         triggeredOnStart: true

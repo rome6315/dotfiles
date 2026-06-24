@@ -28,7 +28,7 @@ Item {
 
             font {
                 family: "Iosevka Nerd Font Bold"
-                pixelSize: 17   // 👈 text size (independent)
+                pixelSize: 17
                 weight: 600
             }
         }
@@ -37,4 +37,10 @@ Item {
     // needed for module to be centered in the bar
     implicitWidth: row.implicitWidth
     implicitHeight: row.implicitHeight
+
+    MouseArea {
+        anchors.fill: parent
+        cursorShape: Qt.PointingHandCursor
+        onClicked: updatesPopup.visible = !updatesPopup.visible
+    }
 }

@@ -58,7 +58,7 @@ Scope {
                     }
 
                     Layout.fillWidth: true
-                    Layout.preferredHeight: 60 //layout.implicitHeight + 20
+                    Layout.preferredHeight: layout.implicitHeight + 20
                     radius: 6 // rounded corners for the card
                     color: Colors.md3.surface_container // bg color
                     border.width: 2

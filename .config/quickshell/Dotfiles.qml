@@ -38,4 +38,10 @@ Item {
     // needed for module to be centered in the bar
     implicitWidth: row.implicitWidth
     implicitHeight: row.implicitHeight
+
+    MouseArea {
+        anchors.fill: parent
+        cursorShape: Qt.PointingHandCursor
+        onClicked: dotfilesPopup.visible = !dotfilesPopup.visible
+    }
 }

@@ -2,26 +2,24 @@ import Quickshell
 import Quickshell.Io
 import QtQuick
 
-// process to check if any files from my git repo need to be pushed to github
 Item {
     id: root
 
-    // initialize variables
-    property int unstagedCount: 0
+    property int unstagedCount: 0 // count unstaged files
+    property var files: [] // store unstaged file names
     property bool dirty: false
-    property var files: []
 
-    // set ignore list since these files aren't important when using Matugen
+    // ignore color files and other irrelevant changes
     property var ignorePatterns: [/dunstrc/, /starship\.toml/, /kitty\/themes\/Matugen\.conf/, /kitty\/current-theme\.conf/, /waybar\/style\.css/, /waybar\/config/, /colors\.[a-z]+/, /\.uuid$/, /quickshell\/Matugen\/Colors.qml/]
 
-    // function for refreshing after the interval
+    // helper for the timer
     function refresh() {
         unstagedCount = 0;
         files = [];
         proc.running = true;
     }
 
-    // run every 5 min and on startup
+    // check every 5 min
     Timer {
         interval: 300000
         running: true
@@ -32,27 +30,28 @@ Item {
 
     Process {
         id: proc
-        command: ["sh", "-c", "cd ~/dotfiles && git diff --name-only"] // get the list of unstaged files
+        command: ["sh", "-c", "cd ~/dotfiles && git diff --name-only"] // this command is the heart of the process
 
-        // load each unstaged file into the files array
+        // store all files from the above command even if they're in the ignored list
         stdout: SplitParser {
             onRead: data => {
                 let line = data.trim();
-                if (line.length > 0)
-                    root.files.push(line);
+                if (line.length === 0)
+                    return;
+
+                root.files = root.files.concat([line]);
             }
         }
 
+        // filter out the ignored files and put clean list into a new array called files
         onExited: code => {
-            let count = 0; // unstaged files that aren't on ignore list
+            let filtered = [];
 
-            // loop through each file
             for (let i = 0; i < root.files.length; i++) {
                 let file = root.files[i];
 
-                let ignored = false; // initialize ignored var
+                let ignored = false;
 
-                // if the file is ignored, break
                 for (let j = 0; j < root.ignorePatterns.length; j++) {
                     if (root.ignorePatterns[j].test(file)) {
                         ignored = true;
@@ -60,15 +59,13 @@ Item {
                     }
                 }
 
-                // count non-ignored files
                 if (!ignored)
-                    count++;
+                    filtered.push(file);
             }
 
-            root.unstagedCount = count; // save count
-            root.dirty = count > 0; // if count is > 0, true, else false since dirty is a bool
-
-            root.files = []; // clear old results so next refresh starts fresh
+            root.files = filtered; // set equal to the clean list of files
+            root.unstagedCount = filtered.length; // get unstaged count
+            root.dirty = filtered.length > 0; // if the list of files is > 0, dirty is true (used in the module to show 'Clean' if no updates)
         }
     }
 }

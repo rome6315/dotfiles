@@ -58,6 +58,7 @@ RowLayout {
             // allow for the workspaces to be clickable
             MouseArea {
                 anchors.fill: parent
+                cursorShape: Qt.PointingHandCursor
 
                 onClicked: Hyprland.dispatch("hl.dsp.focus({ workspace = " + ws.id + " })")
             }
