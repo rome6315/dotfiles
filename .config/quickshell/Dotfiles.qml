@@ -41,7 +41,11 @@ Item {
 
     MouseArea {
         anchors.fill: parent
-        cursorShape: Qt.PointingHandCursor
-        onClicked: dotfilesPopup.visible = !dotfilesPopup.visible
+        cursorShape: service.unstagedCount > 0 ? Qt.PointingHandCursor : Qt.ArrowCursor
+
+        onClicked: {
+            if (service.unstagedCount > 0)
+                dotfilesPopup.visible = !dotfilesPopup.visible;
+        }
     }
 }
