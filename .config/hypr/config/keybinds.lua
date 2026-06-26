@@ -56,9 +56,11 @@ hl.bind("SUPER + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag())
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize())
 
--- screenshot with grimblast
-hl.bind("SUPER + SHIFT + s", hl.dsp.exec_cmd("grimblast --notify copy area"))
-hl.bind("SUPER + SHIFT + m", hl.dsp.exec_cmd("grimblast --notify save output"))
+-- screenshot with grim and slurp
+hl.bind(
+    "SUPER + SHIFT + s",
+    hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy && notify-send "Screenshot" "Copied selected area to clipboard"')
+)
 
 -- make window fullscreen
 hl.bind("SUPER + SHIFT + f", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))

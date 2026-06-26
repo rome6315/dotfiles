@@ -56,7 +56,7 @@ Item {
     }
 
     Timer {
-        interval: 600000 // 10 min
+        interval: 300000 // 5 min
         running: true
         repeat: true
         triggeredOnStart: true
@@ -71,7 +71,7 @@ Item {
             onRead: data => {
                 let line = data.trim();
 
-                // "linux 6.8.1 -> 6.8.2"
+                // grab package name only, not version
                 let pkg = line.split(" ")[0];
 
                 root.updates = root.updates.concat([pkg]);
@@ -79,6 +79,7 @@ Item {
             }
         }
 
+        // if no updates, count is 0 and clear packages array
         onExited: code => {
             if (code === 2) {
                 root.count = 0;

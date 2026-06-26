@@ -64,7 +64,7 @@ Item {
     // launch nmtui
     Process {
         id: wiremix
-        command: ["networkmanager_dmenu"]
+        command: ["kitty", "--class=kittyfloat", "nmtui"]
     }
 
     // make module clickable to show nmtui

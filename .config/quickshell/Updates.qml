@@ -40,7 +40,12 @@ Item {
 
     MouseArea {
         anchors.fill: parent
-        cursorShape: Qt.PointingHandCursor
-        onClicked: updatesPopup.visible = !updatesPopup.visible
+        cursorShape: service.count > 0 ? Qt.PointingHandCursor : Qt.ArrowCursor // change cursor shape if no unstaged files
+
+        // only display popup if there are unstaged files
+        onClicked: {
+            if (service.count > 0)
+                updatesPopup.visible = !updatesPopup.visible;
+        }
     }
 }

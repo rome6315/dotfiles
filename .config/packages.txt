@@ -1,10 +1,7 @@
-waybar
 rofi
-dunst
 matugen
 awww
 wiremixer
-impala
 polkit-gnome
 hpyridle
 hpyrlock
@@ -14,6 +11,13 @@ kitty
 thunar
 nvim
 bitwarden
-grimblast
+grim
+slurp
 firefox
 fastfetch
+quickshell
+vscodium
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+xdg-desktop-portal
+upscayl-bin
