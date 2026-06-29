@@ -22,7 +22,7 @@ hl.window_rule({
 hl.window_rule({
     name = "Thunar",
     match = {
-        class = "thunar",
+        class = "Thunar",
     },
     float = true,
     center = true,
@@ -74,4 +74,27 @@ hl.window_rule({
     min_size = "1 1",
     -- TODO: manual review — unmapped window rule action: "move"
     no_anim = true,
+})
+
+-- Ignore maximize requests from all apps. You'll probably like this.
+local suppressMaximizeRule = hl.window_rule({
+    name  = "suppress-maximize-events",
+    match = { class = ".*" },
+
+    suppress_event = "maximize",
+})
+
+ -- Fix some dragging issues with XWayland
+hl.window_rule({
+    name  = "fix-xwayland-drags",
+    match = {
+        class      = "^$",
+        title      = "^$",
+        xwayland   = true,
+        float      = true,
+        fullscreen = false,
+        pin        = false,
+    },
+
+    no_focus = true,
 })
